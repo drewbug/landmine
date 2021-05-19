@@ -1,0 +1,9 @@
+[Match]
+Name=eth0
+
+[Network]
+Address=172.16.0.1/30
+DHCPServer=true
+
+[DHCPServer]
+SendOption=66:string:172.16.0.1

@@ -1,0 +1,11 @@
+[Unit]
+Description=HPA's tftpd
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=forking
+ExecStart=/usr/sbin/tftpd -l -s /var/lib/tftpboot
+
+[Install]
+WantedBy=multi-user.target
